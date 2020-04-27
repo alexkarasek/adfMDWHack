@@ -22,5 +22,6 @@ UPDATE [Integration].[ETL Cutoff]  SET GroupId = 2, SequenceId = 45, isActive = 
 UPDATE [Integration].[ETL Cutoff]  SET GroupId = 2, SequenceId = 55, isActive = 1  WHERE [Table Name] = 'Sale'
 UPDATE [Integration].[ETL Cutoff]  SET GroupId = 2, SequenceId = 60, isActive = 1  WHERE [Table Name] = 'Stock Holding'
 UPDATE [Integration].[ETL Cutoff]  SET GroupId = 2, SequenceId = 65, isActive = 1  WHERE [Table Name] = 'Transaction'
+UPDATE [Integration].[ETL Cutoff]  SET GroupId = 0, SequenceId = 999, isActive = 0  WHERE [Table Name] = 'Date'
 
 
