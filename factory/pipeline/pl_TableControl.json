@@ -18,7 +18,7 @@
 					"source": {
 						"type": "SqlDWSource",
 						"sqlReaderQuery": {
-							"value": "@concat('select [Table Name] as TableName\n  from integration.[etl cutoffs]\nwhere isActive = 1 and GroupId = ',string(pipeline().parameters.GroupNumber), ' \norder by sequenceid')",
+							"value": "@concat('select [Table Name] as TableName\n  from integration.[etl cutoff]\nwhere isActive = 1 and GroupId = ',string(pipeline().parameters.GroupNumber), ' \norder by sequenceid')",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00"
