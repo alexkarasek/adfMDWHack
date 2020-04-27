@@ -686,7 +686,7 @@
 							"source": {
 								"type": "SqlDWSource",
 								"sqlReaderQuery": {
-									"value": "@concat('select [Table Name] as TableName\n  from integration.[etl cutoffs]\nwhere isActive = 1 and GroupId = ',string(pipeline().parameters.GroupNumber), ' \norder by sequenceid')",
+									"value": "@concat('select [Table Name] as TableName\n  from integration.[etl cutoff]\nwhere isActive = 1 and GroupId = ',string(pipeline().parameters.GroupNumber), ' \norder by sequenceid')",
 									"type": "Expression"
 								},
 								"queryTimeout": "02:00:00"
@@ -802,7 +802,7 @@
 						"typeProperties": {
 							"source": {
 								"type": "SqlDWSource",
-								"sqlReaderQuery": "SELECT DISTINCT GroupID\nFROM Integration.[ETL Cutoffs]\nORDER BY GroupId",
+								"sqlReaderQuery": "SELECT DISTINCT GroupID\nFROM Integration.[ETL Cutoff]\nORDER BY GroupId",
 								"queryTimeout": "02:00:00"
 							},
 							"dataset": {
