@@ -177,7 +177,7 @@
 						"typeProperties": {
 							"source": {
 								"type": "SqlDWSource",
-								"sqlReaderQuery": "SELECT DISTINCT GroupID\nFROM Integration.[ETL Cutoff]\nORDER BY GroupId",
+								"sqlReaderQuery": "SELECT DISTINCT GroupID\nFROM Integration.[ETL Cutoff]\nWHERE isActive = 1 \nORDER BY GroupId",
 								"queryTimeout": "02:00:00"
 							},
 							"dataset": {
