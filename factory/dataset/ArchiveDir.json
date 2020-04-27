@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@concat('Dev/WWIDW/Archive/', dataset().FileName, '/')",
+					"value": "@concat('Dev/WWIDW/Raw/', dataset().FileName, '/')",
 					"type": "Expression"
 				},
 				"fileSystem": "akmdwstorage"
