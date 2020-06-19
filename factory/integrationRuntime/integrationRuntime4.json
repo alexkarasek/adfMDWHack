@@ -1,0 +1,25 @@
+{
+	"name": "integrationRuntime4",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"customSetupScriptProperties": {
+					"blobContainerUri": "https://aktesfs.blob.core.windows.net/ssis",
+					"sasToken": {
+						"type": "SecureString",
+						"value": "**********"
+					}
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
